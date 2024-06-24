@@ -1,5 +1,7 @@
 package com.springboot.core;
 
+import java.util.stream.IntStream;
+
 /**
  * @author prabhakar, @Date 24-06-2024
  */
@@ -13,5 +15,7 @@ public class EvenNumbers {
             System.out.println("Even");
         else
             System.out.println("Not Even");
+
+
     }
 }
