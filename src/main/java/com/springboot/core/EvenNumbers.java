@@ -1,7 +1,6 @@
 package com.springboot.core;
 
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 /**
  * @author prabhakar, @Date 24-06-2024
@@ -23,6 +22,11 @@ public class EvenNumbers {
             if (i % 2 == 0)
                 System.out.println(i);
         }
+
+        System.out.println("using streams");
+        IntStream.range(1,10).filter(x -> x % 2 == 0).forEach(System.out::println);
+
+
 
 
     }
