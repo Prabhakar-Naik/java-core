@@ -1,3 +1,6 @@
+package com.springboot.core;
+
+import java.io.IOException;
 
 public class OsShutdown{
 
