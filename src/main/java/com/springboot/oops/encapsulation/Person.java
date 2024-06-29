@@ -4,7 +4,7 @@ package com.springboot.oops.encapsulation;
  * @author prabhakar, @Date 24-06-2024
  */
 
-class Person {
+public class Person {
     // Private variables
     private String name;
     private int age;
@@ -25,9 +25,7 @@ class Person {
     public void setAge(int age) {
         this.age = age;
     }
-}
 
-public class Main {
     public static void main(String[] args) {
         Person person = new Person();
         person.setName("John");
