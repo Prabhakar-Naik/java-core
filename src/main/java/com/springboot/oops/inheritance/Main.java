@@ -1,4 +1,4 @@
-
+package com.springboot.oops.inheritance;
 
 // Base class
 class Animal {
