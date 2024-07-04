@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class OsShutdown{
 
-  public static void main(String args[]){
+  public static void main(String[] args){
 
     // don't try if you are important work.
     
