@@ -1,4 +1,4 @@
-package com.springboot.core;
+package com.springboot;
 
 /**
  * @author prabhakar, @Date 04-07-2024

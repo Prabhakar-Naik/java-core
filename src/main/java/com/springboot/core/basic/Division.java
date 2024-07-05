@@ -1,4 +1,4 @@
-package com.springboot.core;
+package com.springboot.core.basic;
 
 import com.springboot.exceptions.LargeNumDivisionLowerNumException;
 
