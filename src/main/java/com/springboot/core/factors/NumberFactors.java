@@ -1,4 +1,4 @@
-package com.springboot.core.general;
+package com.springboot.core.factors;
 
 import java.util.Scanner;
 
