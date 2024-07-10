@@ -8,7 +8,7 @@ public class OddNum {
 		
 		System.out.println("Enter a number: ");
 		int n=23;
-		if(n%2!=0 &&n%2==1)
+		if(n%2 != 0 && n%2 == 1)
 			System.out.println(n+" is Odd number");
 		else
 			System.out.println(n+" is not Odd number");
@@ -17,7 +17,7 @@ public class OddNum {
 		
 		for(int i=1;i<=100;i++)
 		{
-			if(i%2!=0 && i%2==1)
+			if(i%2 != 0 && i%2 == 1)
 				System.out.print(i+"  ");
 		}
 		
