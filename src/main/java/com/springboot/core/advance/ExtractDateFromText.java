@@ -16,6 +16,9 @@ import java.util.regex.Pattern;
 public class ExtractDateFromText {
     public static void main(String[] args) {
         String text = "wekj46fjkf2023vjf2022-10-22vkv9kds56fj";
+        String array[] = text.split("-");
+
+        System.out.println(text.substring(array[0].length()-4,array[0].length())+"-"+array[1]+"-"+array[2].substring(0,2));
 
         System.out.println(extractDate(text));
         System.out.println(findDateInText(text));
@@ -24,6 +27,7 @@ public class ExtractDateFromText {
 
 
         /* Easy one*/
+
         // Regular expression to match a date format (YYYY-MM-DD)
         String regex = "\\d{4}-\\d{2}-\\d{2}";
 
