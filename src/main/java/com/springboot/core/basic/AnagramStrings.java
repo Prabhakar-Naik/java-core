@@ -23,7 +23,7 @@ public class AnagramStrings {
 			Arrays.sort(string1);
 			Arrays.sort(string2);
 			
-			if(Arrays.equals(string1,string2)==true)
+			if(Arrays.equals(string1,string2))
 				System.out.println("Both are Anagram strings ");
 			else
 				System.out.println("Not an Anagram***");
