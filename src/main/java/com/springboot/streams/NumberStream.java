@@ -8,12 +8,15 @@ import java.util.stream.IntStream;
 public class NumberStream {
 
     public static void main(String[] args) {
+        // lambda reference type
         System.out.println("Even numbers");
         IntStream.range(1,10).filter(x -> x % 2 ==0).forEach(System.out::println);
 
+        // lambda core type
         System.out.println("Odd Numbers");
         IntStream.range(1,10).filter(x -> x % 2 != 0).forEach(x -> System.out.println(x));
 
+        // prime numbers range of 1 to 10
         System.out.println("prime numbers");
         IntStream.range(1,10).forEach(x -> {
             int count = 0;
