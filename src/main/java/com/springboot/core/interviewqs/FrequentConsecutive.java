@@ -12,6 +12,8 @@ public class FrequentConsecutive {
 
         String string = "aaaabbbcccaaa";
 
+        System.out.println(frequentConsecutive(string));
+
         StringBuilder str = new StringBuilder();
 
         if (string == null || string.isEmpty())
@@ -36,5 +38,30 @@ public class FrequentConsecutive {
         str.append(count);
         System.out.println(str);
 
+    }
+    public static String frequentConsecutive(String input){
+        StringBuilder str = new StringBuilder();
+
+        if (input == null || input.isEmpty())
+            return "";
+
+        char currentChar = input.charAt(0);
+
+        int count =1;
+
+        for (int i = 1; i<input.length();i++){
+
+            if (currentChar == input.charAt(i)){
+                count++;
+            }else {
+                str.append(currentChar);
+                str.append(count);
+                currentChar = input.charAt(i);
+                count = 1;
+            }
+        }
+        str.append(currentChar);
+        str.append(count);
+        return str.toString();
     }
 }
