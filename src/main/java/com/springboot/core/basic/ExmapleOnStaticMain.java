@@ -1,4 +1,4 @@
-package com.springboot.core.advance;
+package com.springboot.core.basic;
 
 public class ExmapleOnStaticMain{
 
