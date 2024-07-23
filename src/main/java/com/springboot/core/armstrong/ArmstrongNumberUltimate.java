@@ -61,7 +61,7 @@ public class ArmstrongNumberUltimate {
 
         while (temp != 0) {
             int digit = temp % 10;
-            //sum = sum + customPower(digit, numberOfDigits);
+            sum = sum + customPower(digit, numberOfDigits);
             temp /= 10;
         }
 
@@ -74,6 +74,23 @@ public class ArmstrongNumberUltimate {
     * then return the result.
     * */
 
+    private static int customPower(int digit, int noOfDigits) {
+        if (noOfDigits == 0) {
+            return 1;
+        }
 
+        double result = 1;
+        int exp = Math.abs(noOfDigits);
+
+        if (noOfDigits < 0) {
+            return (int) (1 / result);
+        }
+
+        for (int i = 0; i < exp; i++) {
+            result *= digit;
+        }
+
+        return (int) result;
+    }
 
 }
