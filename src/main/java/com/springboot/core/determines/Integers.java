@@ -1,4 +1,4 @@
-package com.springboot.core.integers;
+package com.springboot.core.determines;
 
 /**
  * @author prabhakar, @Date 25-07-2024
