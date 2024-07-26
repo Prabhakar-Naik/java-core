@@ -1,4 +1,4 @@
-package com.springboot.core.largest;
+package com.springboot.core.largest_smallest;
 
 import java.util.Scanner;
 
