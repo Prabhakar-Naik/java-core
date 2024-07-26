@@ -1,6 +1,6 @@
 package com.springboot.core.swapping;
 
-public class Swapping3 {
+public class SwappingUsingThirdVariable {
 
 	public static void main(String[] args) {
 		
@@ -8,10 +8,10 @@ public class Swapping3 {
 		
 		System.out.println("Before swapping: "+n1+"  "+n2);
 		
-		n1=n1^n2;
-		n2=n1^n2;
-		n1=n1^n2;
-
+		int temp=n1;
+		n1=n2;
+		n2=temp;
 		System.out.println("After swapping: "+n1+"  "+n2);
+		
 	}
 }

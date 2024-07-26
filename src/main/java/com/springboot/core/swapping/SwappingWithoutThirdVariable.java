@@ -1,6 +1,6 @@
 package com.springboot.core.swapping;
 
-public class Swapping2 {
+public class SwappingWithoutThirdVariable {
 
 	public static void main(String[] args) {
 		
