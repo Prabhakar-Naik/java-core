@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author prabhakar, @Date 26-07-2024
  */
-public class SecondLargestNumber {
+public class SecondLargestAndSmallestNumbers {
 
 	public static void main(String[] args) {
 		
