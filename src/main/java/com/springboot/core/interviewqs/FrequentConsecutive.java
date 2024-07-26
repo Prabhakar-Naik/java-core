@@ -12,7 +12,7 @@ public class FrequentConsecutive {
 
         String string = "aaaabbbcccaaa";
 
-        System.out.println(frequentConsecutive(string));
+        System.out.println(frequentConsecutiveChars(string));
 
         StringBuilder str = new StringBuilder();
 
@@ -39,7 +39,7 @@ public class FrequentConsecutive {
         System.out.println(str);
 
     }
-    public static String frequentConsecutive(String input){
+    public static String frequentConsecutiveChars(String input){
         StringBuilder str = new StringBuilder();
 
         if (input == null || input.isEmpty())
