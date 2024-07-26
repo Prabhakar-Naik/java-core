@@ -1,14 +1,17 @@
-package com.springboot.core.general;
+package com.springboot.core.largest;
 
 import java.util.Arrays;
 
-public class SecondLargestNum {
+/**
+ * @author prabhakar, @Date 26-07-2024
+ */
+public class SecondLargestNumber {
 
 	public static void main(String[] args) {
 		
 		int[] arr= {3,5,10,6,8,9,4,7};
 		int temp;
-		int n=arr.length;
+		int n = arr.length;
 		
 		for(int i=0;i<arr.length;i++)
 		{
