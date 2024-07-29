@@ -1,4 +1,4 @@
-package com.springboot.core.general;
+package com.springboot.core.evenodd;
 
 import java.util.stream.IntStream;
 
