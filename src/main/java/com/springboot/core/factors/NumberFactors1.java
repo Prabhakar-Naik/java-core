@@ -8,7 +8,7 @@ public class NumberFactors1 {
 			printFactors(60);
 		}
 	
-	public static int printFactors(int n) {
+	public static void printFactors(int n) {
 	
 		System.out.print(n+" factors are: ");
 		
@@ -17,8 +17,7 @@ public class NumberFactors1 {
 			if(n%i==0)
 				System.out.print(i+" ");
 		}
-		
-		return n;
+
 	}
 	
 }
