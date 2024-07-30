@@ -18,5 +18,9 @@ public class ReverseStringWords {
 			reverseState=reverseState+reverse+" ";
 		}
 		System.out.println(reverseState);
+
+		//using Internal java method
+		StringBuffer a = new StringBuffer("Java programming is fun");
+		System.out.println(a.reverse());
 	}
 }
