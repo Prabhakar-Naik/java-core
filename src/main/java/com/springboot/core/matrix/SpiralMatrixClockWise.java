@@ -2,7 +2,7 @@ package com.springboot.core.matrix;
 
 import java.util.Scanner;
 
-public class SpiralMatrix {
+public class SpiralMatrixClockWise {
 
 	public static void main(String[] args) {
 
