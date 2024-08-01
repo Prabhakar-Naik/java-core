@@ -12,6 +12,14 @@ public class FactorialNumberRecursion {
 
 		return fact;
     }
+
+	static int f =1;
+	static int calcFactorial(int num){
+		if (num == 0 || num == 1){
+			return 1;
+		}
+		return f * calcFactorial(num-1);
+	}
 	
 	
 	public static void main(String[] args) throws InterruptedException {
