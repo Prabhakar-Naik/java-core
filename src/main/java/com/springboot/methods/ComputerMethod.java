@@ -5,16 +5,16 @@ package com.springboot.methods;
  */
 public class ComputerMethod {
     ComputerMethod() {
-        System.out.println("Constructor of Computer class.");
+        System.out.println("Constructor of ComputerMethod class.");
     }
     void computer_method() {
         System.out.println("Power gone! Shut down your PC soon...");
     }
     public static void main(String[] args) {
         ComputerMethod my = new ComputerMethod();
-        Laptop your = new Laptop();
+        Laptop lap = new Laptop();
         my.computer_method();
-        your.laptop_method();
+        lap.laptop_method();
     }
 }
 
