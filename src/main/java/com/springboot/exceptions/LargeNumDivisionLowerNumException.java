@@ -13,4 +13,7 @@ public class LargeNumDivisionLowerNumException extends RuntimeException {
         return "Given Negative value "+num;
     }
 
+    public static void voteValidateException(int age){
+        System.out.println("You are not valid for vote");
+    }
 }
