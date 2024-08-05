@@ -14,19 +14,19 @@ public class InsertPrepared {
         try{
             Class.forName("oracle.jdbc.driver.OracleDriver");
 
-            Connection con= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","prabhakar","prabha225");
+            Connection connection= DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","username","password");
 
-            PreparedStatement stmt=con.prepareStatement("insert into USERS values(?,?,?,?,?,?,?,?,?)");
+            PreparedStatement statement=connection.prepareStatement("insert into USERS values(?,?,?,?,?,?,?,?,?)");
 
-            stmt.setInt(1,101);//1 specifies the first parameter in the query
-            stmt.setString(2,"Ratan");
+            statement.setInt(1,101);//1 specifies the first parameter in the query
+            statement.setString(2,"Ratan");
             //stmt ect values
 
-            int i=stmt.executeUpdate();
+            int i=statement.executeUpdate();
 
             System.out.println(i+" records inserted");
 
-            con.close();
+            connection.close();
         }catch(Exception e){ System.out.println(e);}
     }
 }
