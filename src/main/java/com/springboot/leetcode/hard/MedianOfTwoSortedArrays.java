@@ -1,4 +1,4 @@
-package com.springboot.leetcode.array;
+package com.springboot.leetcode.hard;
 
 /**
  * @author prabhakar, @Date 12-08-2024
