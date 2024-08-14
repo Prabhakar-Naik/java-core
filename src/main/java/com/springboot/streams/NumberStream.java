@@ -14,7 +14,7 @@ public class NumberStream {
 
         // lambda core type
         System.out.println("Odd Numbers");
-        IntStream.range(1,10).filter(x -> x % 2 != 0).forEach(x -> System.out.println(x));
+        IntStream.range(1,10).filter(x -> x % 2 != 0).forEach(System.out::println);
 
         // prime numbers range of 1 to 10
         System.out.println("prime numbers");
