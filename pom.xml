@@ -15,12 +15,12 @@
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.oracle/ojdbc14 -->
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/com.oracle/ojdbc14 &ndash;&gt;
         <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc14</artifactId>
             <version>10.2.0.3.0</version>
-        </dependency>
+        </dependency>-->
 
     </dependencies>
 </project>
