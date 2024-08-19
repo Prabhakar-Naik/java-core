@@ -1,4 +1,4 @@
-package com.springboot.advance;
+package com.springboot.awtprograms;
 
 import java.awt.*;
 
