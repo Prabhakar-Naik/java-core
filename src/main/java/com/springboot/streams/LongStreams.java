@@ -2,7 +2,7 @@ package com.springboot.streams;
 
 import java.util.stream.LongStream;
 
-public class LongStream1 {
+public class LongStreams {
 
 	public static void main(String[] args) {
 		
