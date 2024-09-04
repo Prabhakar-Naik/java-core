@@ -1,4 +1,4 @@
-package com.springboot.collections;
+package com.springboot.collections.map;
 
 import java.util.ArrayList;
 import java.util.HashMap;
