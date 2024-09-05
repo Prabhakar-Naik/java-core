@@ -13,7 +13,7 @@ public class VectorDemo {
 		
 		vlist.add("prabha");
 		vlist.add("venkat");
-		vlist.add("jaya");
+		vlist.add("laya");
 		vlist.add("sudha");
 		vlist.add("sandhya");
 		vlist.add("kalidra");
@@ -27,7 +27,7 @@ public class VectorDemo {
 		vlist.remove(2);
 		System.out.println("After removing 2 index: "+vlist);
 		
-		System.out.println("vlist contain jaya: "+vlist.contains("jaya"));
+		System.out.println("vlist contain laya: "+vlist.contains("laya"));
 		
 		System.out.println("vlist is Empty: "+vlist.isEmpty());
 		

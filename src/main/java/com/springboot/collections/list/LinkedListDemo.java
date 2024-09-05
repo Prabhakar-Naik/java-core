@@ -27,7 +27,7 @@ public class LinkedListDemo {
 		list.remove(2);
 		System.out.println("After removing 2 index: "+list);
 		
-		System.out.println("list contain jaya: "+list.contains('A'));
+		System.out.println("list contain laya: "+list.contains('A'));
 		
 		System.out.println("list is Empty: "+list.isEmpty());
 		

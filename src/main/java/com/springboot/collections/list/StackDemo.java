@@ -41,7 +41,7 @@ public class StackDemo {
 		slist.remove(2);
 		System.out.println("After removing 2 index: "+slist);
 		
-		System.out.println("vlist contain jaya: "+slist.contains('A'));
+		System.out.println("vlist contain laya: "+slist.contains('A'));
 		
 		System.out.println("vlist is Empty: "+slist.isEmpty());
 		
