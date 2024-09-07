@@ -3,6 +3,7 @@ package com.springboot.exceptions;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * @author prabhakar, @Date 09-08-2024
@@ -11,15 +12,17 @@ public class ClassCastException {
 
     public ClassCastException() {
 
-        List list = new ArrayList();
+        List<Object> list = new ArrayList<>();
         list.add("one");
         list.add("two");
-        Iterator it = list.iterator();
-        while (it.hasNext()) {
+        Iterator<Object> it = list.iterator();
+        while(it.hasNext()) {
             // intentionally throw a ClassCastException by trying to cast a String to an
             // Integer (technically this is casting an Object to an Integer, where the Object
             // is really a reference to a String:
-            String i = (String)it.next();
+            // if you try to cast in Integer you can get Class Cast Exception
+            // Integer i = (Integer)it.next();
+            String i = (String) it.next();
             System.out.println(i);
         }
     }

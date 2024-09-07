@@ -2,13 +2,14 @@ package com.springboot.streams;
 
 import java.util.stream.IntStream;
 
-public class IntStream1 {
+public class IntStreams {
 
 	public static void main(String[] args) {
-		
+
 		int[] arr= {3,4,2,6,5,8,20,5,15,0,14,8,18,19,24,7};
-		
+
 		int[] copy=arr;
+
 		System.out.println("Smallest digit in array: ");
 		IntStream.of(copy).min().ifPresent(System.out::println);
 		
