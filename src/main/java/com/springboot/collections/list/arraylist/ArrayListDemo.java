@@ -1,4 +1,4 @@
-package com.springboot.collections.list;
+package com.springboot.collections.list.arraylist;
 
 import java.util.ArrayList;
 import java.util.Iterator;

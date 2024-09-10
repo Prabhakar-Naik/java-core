@@ -1,4 +1,4 @@
-package com.springboot.collections.list;
+package com.springboot.collections.list.linkedlist;
 
 import java.util.Iterator;
 import java.util.LinkedList;
