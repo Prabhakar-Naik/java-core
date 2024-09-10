@@ -1,4 +1,4 @@
-package com.springboot.collections.set;
+package com.springboot.collections.set.hashset;
 
 import java.util.HashSet;
 import java.util.Iterator;

@@ -1,40 +1,42 @@
-package com.springboot.collections.set;
+package com.springboot.collections.set.linkedhashset;
 
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.Set;
-import java.util.TreeSet;
 import java.util.stream.Collectors;
 
-public class TreeSetDemo {
+public class LinkedHashSetDemo {
 
 	public static void main(String[] args) {
 		
-		Set<Integer> set=new TreeSet<>();
+		Set<String> set=new LinkedHashSet<>();
 		
-		set.add(20);
-		set.add(40);
-		set.add(80);
-		set.add(200);
-		set.add(100);
-		set.add(10);
-		set.add(52);
-		System.out.println("Normal Treeset elements: "+set); 		//by default it is sorted.....
+		set.add("abc");
+		set.add("ABC");
+		set.add("DEF");
+		set.add("def");
+		//set.add(null);
+		set.add("ghi");
+		set.add("GHI");
+		set.add("Prabha");
 		
-		set.remove(20);
-		System.out.println("After removing 20: "+set);
+		System.out.println(set);
+		
+		set.remove("abc");
+		System.out.println("After removing abc: "+set);
 		System.out.println("Sorted order: ");
 		set.stream().sorted().forEach(v ->System.out.print(v+"  "));	// null pointer Exception BCZ of null
 		
 		
-		set.add( 52);
-		System.out.println("\nAfter add 52 : "+set);
+		set.add("sandhya");
+		System.out.println("\nAfter add sandhya : "+set);
 		
-		set.remove(100);
+		set.remove("Prabha");
 		System.out.println("After 4 index removing: "+set);
 		
-		System.out.println("set contain value 10: "+set.contains(10));// true
+		System.out.println("set contain value prabha: "+set.contains("Prabha"));// false BCZ of  previous step removing 4th index
 		
-		System.out.println("set Contain value 50: "+set.contains(50));//false
+		System.out.println("set Contain value sandhya: "+set.contains("sandhya"));// true
 		
 		//System.out.println("get 0 index value: "+set.get(0));
 		
@@ -49,19 +51,9 @@ public class TreeSetDemo {
 		System.out.println("\nFirst Element in the set: "+set.stream().findFirst());
 		
 		System.out.println("Find Any element from set: "+set.stream().findAny());
-		
-		System.out.println("All elements matches Even numbers: "+set.stream().allMatch( n ->n%2==0));
-		
-		System.out.println("All elements matches odd numbers: "+set.stream().allMatch(n -> n%2!=0));
-		
-		System.out.println("Any element matches odd number: "+set.stream().anyMatch(n ->n%2!=0));
-		
-		System.out.println("Any element matches even number: "+set.stream().anyMatch(n ->n%2==0));
-		
-		
-		
+	
 		System.out.println("Using ForEach loop: ");
-		for(int a:set)
+		for(String a:set)
 			System.out.println(a);
 		
 		System.out.println("Using Stream API");
@@ -81,8 +73,6 @@ public class TreeSetDemo {
 		set.iterator().forEachRemaining(n ->System.out.println(n));
 		set.clear();
 		System.out.println(set); 		// remove all elements from the list
-		
-		
 		
 		
 	}
