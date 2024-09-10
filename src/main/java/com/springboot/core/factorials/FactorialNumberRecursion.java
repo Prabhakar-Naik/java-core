@@ -9,7 +9,6 @@ public class FactorialNumberRecursion {
 			fact = fact * n;
 			printFactorial(n - 1);
 		}
-
 		return fact;
     }
 
@@ -18,14 +17,24 @@ public class FactorialNumberRecursion {
 		if (num == 0 || num == 1){
 			return 1;
 		}
-		return f * calcFactorial(num-1);
+		return  num * calcFactorial(num-1);
 	}
-	
-	
-	public static void main(String[] args) throws InterruptedException {
+
+	static int factorial(int n) {
+		if (n == 1)
+			return 1;
+		else {
+			return (n * factorial(n - 1));
+		}
+	}
+
+
+		public static void main(String[] args) throws InterruptedException {
 
 		System.out.println(printFactorial(5));
-		fact = 1;
-		System.out.println(printFactorial(4));
+//		fact = 1;
+		System.out.println(calcFactorial(4));
+
+		System.out.println(factorial(4));
 	}
 }
