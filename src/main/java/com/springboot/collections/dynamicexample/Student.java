@@ -1,4 +1,4 @@
-package com.springboot.collections.list.dynamicexample;
+package com.springboot.collections.dynamicexample;
 
 /**
  * @author prabhakar, @Date 13-09-2024

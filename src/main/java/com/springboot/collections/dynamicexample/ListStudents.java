@@ -1,4 +1,4 @@
-package com.springboot.collections.list.dynamicexample;
+package com.springboot.collections.dynamicexample;
 
 import java.util.ArrayList;
 import java.util.HashMap;
