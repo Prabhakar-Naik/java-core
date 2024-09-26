@@ -1,21 +1,24 @@
 package com.springboot.core.basic;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class DateFormatter {
-	public static void main(String[] args) {
-		
-		        // Get the current date
-		        LocalDate today = LocalDate.now();
+    public static void main(String[] args) {
 
-		        // Get the month number to increase by
-		        int monthToIncrease = 10;
+        // Get the current date
+        LocalDate today = LocalDate.now();
+        LocalTime localTime = LocalTime.now();
 
-		        // Calculate the new date
-		        LocalDate newDate = today.plusMonths(monthToIncrease);
+        // Get the month number to increase by
+        int monthToIncrease = 10;
 
-		        // Print the new date
-		        System.out.println("The date is: " + newDate);
+        // Calculate the new date
+        LocalDate newDate = today.plusMonths(monthToIncrease);
 
-	}
+        // Print the new date
+        System.out.println("The date is: " + newDate);
+        System.out.println("The time is: "+ localTime);
+
+    }
 }
