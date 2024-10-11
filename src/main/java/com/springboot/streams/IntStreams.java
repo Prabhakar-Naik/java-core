@@ -6,7 +6,7 @@ public class IntStreams {
 
 	public static void main(String[] args) {
 
-		int[] arr= {3,4,2,6,5,8,20,5,15,0,14,8,18,19,24,7};
+		int[] arr= {3,4,2,6,5,8,20,5,15,1,14,8,18,19,24,7};
 
 		int[] copy=arr;
 

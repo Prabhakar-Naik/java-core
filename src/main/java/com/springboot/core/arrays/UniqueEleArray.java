@@ -20,6 +20,7 @@ public class UniqueEleArray {
             map.put(arr[i], i);
 
         System.out.println(map.keySet());
+        System.out.println(map.values());
 
         System.out.println("Using Stream finding distinct values: ");
 
