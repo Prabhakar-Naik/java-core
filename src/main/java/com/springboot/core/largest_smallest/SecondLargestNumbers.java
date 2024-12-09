@@ -29,7 +29,7 @@ public class SecondLargestNumbers {
 
         System.out.println("===============================================");
 
-        System.out.println("The seconfHighest Number without sorting using stream java8");
+        System.out.println("The second Highest Number without sorting using stream java8");
 
         OptionalInt big = Arrays.stream(numbers).max();
         OptionalInt secondBig = Arrays.stream(numbers)
