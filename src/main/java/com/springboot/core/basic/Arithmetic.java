@@ -9,18 +9,18 @@ public class Arithmetic {
 		int i=20;
 		int j=10;
 		System.out.println("Original order: i to j ");
-		System.out.println(i+j);
-		System.out.println(i-j);
-		System.out.println(i*j);
-		System.out.println(i/j);
-		System.out.println(i%j);
+		System.out.println("Total Value: "+(i+j));
+		System.out.println("Remaining Value: "+(i-j));
+		System.out.println("Product Value: "+(i*j));
+		System.out.println("Result Value: "+(i/j));
+		System.out.println("Remainder Value: "+(i%j));
 		
 		System.out.println("Reverse order: j to i ");
-		System.out.println(j+i);
-		System.out.println(j-i);
-		System.out.println(j*i);
-		System.out.println(j/i);
-		System.out.println(j%i);
+		System.out.println("Total Value: "+(j+i));
+		System.out.println("Remaining Value: "+(j-i));
+		System.out.println("Product Value: "+(j*i));
+		System.out.println("Result Value: "+(j/i));
+		System.out.println("Remainder Value: "+(j%i));
 		
 		
 		System.out.println("===========");
@@ -39,7 +39,7 @@ public class Arithmetic {
 
 		  HashMap<String, String> map = new HashMap<>();
 		  map.put(user, password);
-		  return map ;
+		  return map;
 	}
 	
 }

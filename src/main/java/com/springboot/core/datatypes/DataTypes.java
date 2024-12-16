@@ -34,7 +34,7 @@ public class DataTypes {
 		
 		System.out.println("\nint Details: ");
 		System.out.println("Min: "+Integer.MIN_VALUE);
-		System.out.println("Min: "+Integer.MAX_VALUE);
+		System.out.println("Max: "+Integer.MAX_VALUE);
 		System.out.println("Max: "+Integer.SIZE/8+" Bytes");
 		
 		long l1=-9223372036854775808L;
@@ -45,21 +45,25 @@ public class DataTypes {
 		
 		System.out.println("\nlong Details: ");
 		System.out.println("Min: "+Long.MIN_VALUE);
-		System.out.println("Min: "+Long.MAX_VALUE);
+		System.out.println("Max: "+Long.MAX_VALUE);
 		System.out.println("Max: "+Long.SIZE/8+" Bytes");
 		
 		System.out.println("\nfloat Details: ");
 		System.out.println("Min: "+Float.MIN_VALUE);
-		System.out.println("Min: "+Float.MAX_VALUE);
+		System.out.println("Max: "+Float.MAX_VALUE);
 		System.out.println("Max: "+Float.SIZE/8+" Bytes");
 		
 		System.out.println("\ndouble Details: ");
 		System.out.println("Min: "+Double.MIN_VALUE);
 		System.out.println("Max: "+Double.MAX_VALUE);
 		System.out.println("Min: "+Double.SIZE/8+" Bytes");
+
+		char ch = (int) 59999;
+		System.out.println(ch);
+
 		
 		//maximum values present in below data types
-		
+		System.out.println();
 		byte b4=127;
 		short s4=32767;
 		int i4=2147483647;
