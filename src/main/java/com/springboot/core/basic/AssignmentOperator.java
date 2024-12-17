@@ -1,6 +1,6 @@
 package com.springboot.core.basic;
 
-public class AssignmentOper {
+public class AssignmentOperator {
 
 	public static void main(String[] args) {
 		
@@ -22,6 +22,8 @@ public class AssignmentOper {
 		
 		i %=5;
 		System.out.println(i);
+		System.out.printf("%c",i);
+//		System.out.print(i);
 		
 		
 	}
