@@ -9,7 +9,7 @@ public class RightAngledTrianglePattern {
 
         int rows = 6;
 
-        for (int i = 1; i <= rows; ++i) {
+        for (int i = 1; i <= rows; i++) {
             for (int j = 1; j <= i; ++j) {
                 System.out.print("* ");
             }
@@ -34,6 +34,9 @@ public class RightAngledTrianglePattern {
         for (int i=1, j=1; j<=rows; i= i*10, j++){
             System.out.println(i);
         }
+
+        for (int i=10; i<=100000; i=i*10)
+            System.out.println(i);
 
 
 
