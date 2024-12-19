@@ -7,9 +7,9 @@ This repository serves as a comprehensive resource for Java learners, developers
 
 ## 📚 **Table of Contents**
 
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Java Topics Covered](#java-topics-covered)
+1. [Introduction](#Introduction)
+2. [Features](#Features)
+3. [Java Topics Covered](#Java Topics Covered)
 4. [How to Use This Repository](#how-to-use-this-repository)
 5. [Repository Structure](#repository-structure)
 6. [Contributing](#contributing)
@@ -17,7 +17,7 @@ This repository serves as a comprehensive resource for Java learners, developers
 
 ---
 
-## 📝 **Introduction**
+## 📝 Introduction
 
 Java is one of the most widely-used programming languages in the world, known for its platform independence and robust design. This repository is designed to help individuals:
 - Learn Java from the ground up.
@@ -28,7 +28,7 @@ Whether you are a beginner or a seasoned developer, you'll find valuable resourc
 
 ---
 
-## ✨ **Features**
+## ✨ Features
 
 - Comprehensive coverage of **Core Java Concepts**.
 - Hands-on examples for better understanding.
@@ -39,7 +39,7 @@ Whether you are a beginner or a seasoned developer, you'll find valuable resourc
 
 ---
 
-## 📂 **Java Topics Covered**
+## 📂 Java Topics Covered
 
 The repository includes code samples and explanations for the following topics:
 
@@ -114,7 +114,9 @@ The repository includes code samples and explanations for the following topics:
 ```bash
 git clone https://github.com/Prabhakar-Naik/java-core.git
 ```
-#### cd java-core
+```bash 
+cd java-core
+```
 
 Navigate to a specific topic folder to explore code examples and explanations.
 
