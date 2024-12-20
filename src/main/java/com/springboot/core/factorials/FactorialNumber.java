@@ -4,20 +4,19 @@ import java.util.Scanner;
 
 public class FactorialNumber {
 
-	public static void main(String[] args) {
-		
-		System.out.println("Enter a number: ");
-		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
+    public static void main(String[] args) {
 
-		int fact=1;
-		for(int i=1;i<=n;i++)
-		{
-			fact=fact * i;
-		}
+        System.out.println("Enter a number: ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
 
-		sc.close();
-		System.out.println(n+" factorial is "+fact);
+        int fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
 
-	}
+        sc.close();
+        System.out.println(n + " factorial is " + fact);
+
+    }
 }

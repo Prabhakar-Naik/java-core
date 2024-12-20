@@ -7,9 +7,9 @@ This repository serves as a comprehensive resource for Java learners, developers
 
 ## 📚 **Table of Contents**
 
-1. [Introduction](#Introduction)
-2. [Features](#Features)
-3. [Java Topics Covered](#Java Topics Covered)
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Java Topics Covered](#java-topics-covered)
 4. [How to Use This Repository](#how-to-use-this-repository)
 5. [Repository Structure](#repository-structure)
 6. [Contributing](#contributing)
