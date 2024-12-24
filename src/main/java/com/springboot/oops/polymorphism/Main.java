@@ -10,6 +10,7 @@ class Parent {
         System.out.println("Parent method");
     }
 
+
     public static void display1(){
         System.out.println("static void display1 Parent");
     }
