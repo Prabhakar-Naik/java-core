@@ -1,4 +1,4 @@
-package com.springboot.oops.inheritance.multiple;
+package com.springboot.oops.inheritance.multiple.calcexample;
 
 /**
  * @author prabhakar, @Date 26-06-2024

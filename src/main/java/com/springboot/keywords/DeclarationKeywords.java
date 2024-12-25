@@ -5,7 +5,16 @@ import java.util.List;
 /**
  * @author prabhakar, @Date 24-12-2024
  */
-public interface Interfaces {
+public interface DeclarationKeywords {
+
+    // according to java standards.
+
+    // class is a keyword which is used to declare identity for a blueprint for object (class)
+
+    // enum keyword in Java is used to define a fixed set of named constants,
+    // often representing a group of related values such as days of the week or directions.
+    // Enums are type-safe and can include fields, methods, and constructors to enhance functionality.
+    enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY; }
 
     //interface is a keyword
     // which is used to declare identity for a blueprint for class i.e (interface)

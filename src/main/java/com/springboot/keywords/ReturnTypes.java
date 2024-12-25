@@ -7,6 +7,7 @@ import java.util.*;
  */
 public class ReturnTypes {
 
+
     // return type is mandate for a method at least void type
 
     void init(){
@@ -54,9 +55,9 @@ public class ReturnTypes {
         return true;
     }
 
-    PublicClass publicClass(){
+    AccessControlKeywords publicClass(){
         // it must accept PublicClass return type only
-        return new PublicClass();
+        return new AccessControlKeywords();
     }
 
     String string(){
