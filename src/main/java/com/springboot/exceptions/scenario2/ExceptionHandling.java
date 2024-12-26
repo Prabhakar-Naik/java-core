@@ -17,19 +17,19 @@ public class ExceptionHandling {
     /*
     java.lang.Object
     |---java.lang.Throwable
-        |---java.lang.Error
-        |   |---java.lang.VirtualMachineError
-        |   |   |---java.lang.OutOfMemoryError
-        |   |   |---java.lang.StackOverflowError
-        |   |---java.lang.LinkageError
-        |   |   |---java.lang.ClassFormatError
-        |   |   |---java.lang.NoClassDefFoundError
-        |---java.lang.Exception                         |
+        |---java.lang.Error                       ______|
+        |   |---java.lang.VirtualMachineError           |
+        |   |   |---java.lang.OutOfMemoryError          |
+        |   |   |---java.lang.StackOverflowError        |----Errors (Managed by JVM)
+        |   |---java.lang.LinkageError                  |
+        |   |   |---java.lang.ClassFormatError          |
+        |   |   |---java.lang.NoClassDefFoundError______|
+        |---java.lang.Exception                        _|
             |---java.lang.RuntimeException              |
             |   |---java.lang.ArithmeticException       |---UnChecked Exceptions ==>|
             |   |---java.lang.NullPointerException      |                           |
             |   |---java.lang.IndexOutOfBoundsException |                           |
-            |   |---java.lang.IllegalArgumentException  |                           |
+            |   |---java.lang.IllegalArgumentException _|                           |
             |---java.io.IOException                     |______     Handled By Developers
             |   |---java.io.FileNotFoundException       |      |                    |
             |   |---java.io.EOFException                |      |                    |
