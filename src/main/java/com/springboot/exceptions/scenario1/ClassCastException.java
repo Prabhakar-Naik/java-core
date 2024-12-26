@@ -1,9 +1,8 @@
-package com.springboot.exceptions;
+package com.springboot.exceptions.scenario1;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Objects;
 
 /**
  * @author prabhakar, @Date 09-08-2024

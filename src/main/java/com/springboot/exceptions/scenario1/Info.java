@@ -1,4 +1,4 @@
-package com.springboot.exceptions;
+package com.springboot.exceptions.scenario1;
 
 /**
  * @author prabhakar, @Date 05-08-2024

@@ -1,6 +1,6 @@
-package com.springboot.exceptions;
+package com.springboot.exceptions.scenario1;
 
-import static com.springboot.exceptions.LargeNumDivisionLowerNumException.voteValidateException;
+import static com.springboot.exceptions.scenario1.LargeNumDivisionLowerNumException.voteValidateException;
 
 /**
  * @author prabhakar, @Date 02-08-2024

@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import static com.springboot.exceptions.LargeNumDivisionLowerNumException.GivenNegativeValue;
-
 /**
  * @author prabhakar, @Date 22-07-2024
  */

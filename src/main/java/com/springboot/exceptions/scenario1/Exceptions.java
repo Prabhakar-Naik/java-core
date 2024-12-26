@@ -1,4 +1,4 @@
-package com.springboot.exceptions;
+package com.springboot.exceptions.scenario1;
 
 public class Exceptions {
     public static void main(String[] args) {

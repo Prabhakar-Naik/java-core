@@ -1,6 +1,6 @@
 package com.springboot.core.basic;
 
-import com.springboot.exceptions.LargeNumDivisionLowerNumException;
+import com.springboot.exceptions.scenario1.LargeNumDivisionLowerNumException;
 
 /**
  * @author prabhakar, @Date 26-06-2024

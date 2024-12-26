@@ -1,4 +1,4 @@
-package com.springboot.exceptions;
+package com.springboot.exceptions.scenario1;
 
 import java.util.Scanner;
 
