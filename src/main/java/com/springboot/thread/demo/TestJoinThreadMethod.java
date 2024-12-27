@@ -1,4 +1,4 @@
-package com.springboot.thread;
+package com.springboot.thread.demo;
 
 /**
  * @author prabhakar, @Date 07-08-2024

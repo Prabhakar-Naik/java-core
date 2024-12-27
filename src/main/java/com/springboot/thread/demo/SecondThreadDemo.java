@@ -1,4 +1,4 @@
-package com.springboot.thread;
+package com.springboot.thread.demo;
 
 import java.util.stream.IntStream;
 
