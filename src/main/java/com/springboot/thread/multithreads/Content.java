@@ -103,4 +103,9 @@ public class Content {
 
     */
 
+    // Thread Pool:
+//          Resource management efficient
+//          Response time faster
+//          control over thread count
+
 }

@@ -57,6 +57,8 @@ public class ThreadLifeCycle extends Thread{
 
         System.out.println(thread.getState());
 
+
+
     }
 
 
