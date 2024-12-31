@@ -12,7 +12,7 @@ public class Program1 {
 	    
 	     //array=IntStream.of(array).distinct().toArray();		// for distinct pair
 
-	    System.out.println("Pair of elements equal to 10: ");
+	    System.out.println("pair of elements equal to 10: ");
 	    for (int i=0;i<array.length;i++)
 	    {
 	      for (int j=i ; j<array.length;j++){
