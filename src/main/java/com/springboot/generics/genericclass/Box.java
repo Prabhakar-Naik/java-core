@@ -1,4 +1,4 @@
-package com.springboot.generics;
+package com.springboot.generics.genericclass;
 /**
  * @author prabhakar, @Date 30-12-2024
  */
