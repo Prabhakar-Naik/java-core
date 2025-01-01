@@ -2,7 +2,7 @@ package com.springboot.generics.genericclass;
 /**
  * @author prabhakar, @Date 30-12-2024
  */
-public class Box<T> {//  one or more type parameters
+public class GenericLass<T> {//  one or more type parameters
     //  These type parameters are placeholders that are replaced with specific types when the class is instantiated.
     private T value;
 
@@ -14,8 +14,8 @@ public class Box<T> {//  one or more type parameters
         this.value = value;
     }
 
-    //Here, Box<T> is a generic class. The type parameter T will be replaced with a specific
-    // type when an object of Box is created. Now, the Box class is type-safe, and we will not
+    //Here, GenericLass<T> is a generic class. The type parameter T will be replaced with a specific
+    // type when an object of GenericLass is created. Now, the GenericLass class is type-safe, and we will not
     // encounter the ClassCastException because the types are enforced at compile time.
 
     /*
@@ -24,18 +24,3 @@ public class Box<T> {//  one or more type parameters
     */
 
 }
-
-
-/*
-class Box {
-    private Object value;
-
-    public Object getValue() {
-        return value;
-    }
-
-    public void setValue(Object value) {
-        this.value = value;
-    }
-}
-*/

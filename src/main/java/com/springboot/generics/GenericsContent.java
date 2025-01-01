@@ -103,4 +103,46 @@ public class GenericsContent {
     just like the Container interface.
 
     */
+
+    /*
+
+    Wildcards in Generics
+        In Java Generics, wildcards (?) are a special kind of type argument that can be used in
+        method arguments or class definitions to represent an unknown type. They allow for more
+        flexible and dynamic code by letting the type be specified later or be more loosely defined.
+
+        Wildcards are useful when you don’t know the exact type at the time of defining a class
+        or method, or when you want to allow a range of types rather than a single specific one.
+    Basic syntax
+        List<?> list;
+
+        Here, ? represents an unknown type. It means the list can contain elements of any type,
+        but you cannot perform type-specific operations on the elements.
+
+    Why Use Wildcards?
+
+        Wildcards provide flexibility, especially when you want to write code that can work with
+        different types, but you don’t want to be too specific about the types. They are often
+        used when you want a method to accept arguments of generic types without tying it down
+        to a particular class.
+
+        For instance, if you need to write a method that can handle a list of any object type
+        (e.g., List of Integer, List of String, etc.), wildcards allow you to do that.
+
+    Wildcards in Method Parameters
+
+        Wildcards are typically used as method parameters where the exact type isn’t important.
+        They allow a method to accept different types of collections or generic classes.
+
+     public void printList(List<?> list) {
+    for (Object element : list) {
+        System.out.println(element);
+    }
+    }
+
+    In this example, List<?> can be a list of any object type, like List<String>, List<Integer>,
+    etc. The method can process them all without needing to know the exact type.
+
+
+    */
 }
