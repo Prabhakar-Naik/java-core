@@ -1,7 +1,5 @@
 package com.springboot.exceptions.scenario2;
 
-import com.springboot.collections.dynamicexample.Student;
-
 /**
  * @author prabhakar, @Date 25-12-2024
  */
