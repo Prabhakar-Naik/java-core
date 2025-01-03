@@ -7,10 +7,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class ArrayListExample {
+public class LevelOne {
 
     public static void main(String[] args) {
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         list.add("A");
         list.add("B");
         list.add("C");
@@ -64,6 +64,17 @@ public class ArrayListExample {
         System.out.println("First Element: "+list.get(0));
         System.out.println("First Element: "+list.get(0));
         System.out.println("Last Element: "+list.get(list.size()-1));
+
+        System.out.println("Element Contains: "+list.contains("A"));
+        System.out.println("Element Contains: "+list.contains("B"));
+        list.remove("A");
+        System.out.println("Remove A: "+list);
+       list.add(0,"Z");
+        System.out.println("Add Z: "+list);
+
+        list.set(3,"Y");
+        System.out.println("Add Y: "+list);
+
 
     }
 }
