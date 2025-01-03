@@ -84,6 +84,13 @@ public class CollectionContent {
         2. Index Based Access
         3. Allow Duplicates
 
+    ArrayList:
+        An ArrayList is a resizable array implementation of the List interface.
+        Unlike arrays in java, which have a fixed size, an ArrayList can change
+        its size dynamically as elements are added or removed. This flexibility
+        makes it a popular choice when the number of elements in a list isn't known
+        in advance.
+    more about advance level/ list/ arraylist
 
 
 
