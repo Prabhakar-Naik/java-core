@@ -1,9 +1,7 @@
 package com.springboot.collections.advancelevel.list.arraylist;
 
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Level3 {
 
@@ -41,8 +39,43 @@ public class Level3 {
         System.out.println(list4);
 
 
-        List<Integer> list3 = List.of(1, 2, 3, 4);
-        //list3.set(1, 33);
+        List<Integer> list3 = List.of(1, 2, 3, 4); // immutable object
+        // we can not add, set, remove the data we just read the data.
+        //list3.set(1, 33);     //UnsupportedOperationException
+        //list3.remove(2);
+        System.out.println(list3);
+
+        // list to Array
+        Object[] array1 = list3.toArray();
+        System.out.println(Arrays.toString(array1));
+
+        //sorting ArrayList
+
+        List<Integer> sortingList = Arrays.asList(7,1,8,5,2,3,4);
+
+        System.out.println("level 1");
+        // sorting sequence order
+        sortingList.sort(null);
+        System.out.println(sortingList);
+
+        // reverse order
+        sortingList.sort(Collections.reverseOrder());
+        System.out.println(sortingList);
+
+        System.out.println("level 2");
+        // soring order using comparator in lambda expression
+        sortingList.sort(Comparator.comparingInt(o -> o));
+        System.out.println(sortingList);
+
+        // reverse order using comparator in lambda expression
+        sortingList.sort((o1, o2) -> o2 - o1);
+        System.out.println(sortingList);
+
+        System.out.println("level 3");
+        Collections.sort(sortingList);
+        System.out.println(sortingList);
+
+        // make user defined reverse order logic outside the main method and call it.
 
     }
 }
