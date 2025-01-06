@@ -1,8 +1,9 @@
 package com.springboot.collections.advancelevel.list.arraylist;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 
-public class LevelTwo {
+public class Level2 {
 
     public static void main(String[] args) {
 
@@ -19,8 +20,20 @@ public class LevelTwo {
         arrayList.add(1);
         arrayList.add(1);
         arrayList.add(1);
-        arrayList.add(1);
-        System.out.println(arrayList);
+
+        System.out.println(arrayList.size());
+
+        try {
+
+            Field field = ArrayList.class.getDeclaredField("elementData");
+            field.setAccessible(true);      // This will fail without --add-opens
+            Object[] elementData = (Object[]) field.get(arrayList);
+            System.out.println(elementData.length);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
 
     }
 
