@@ -16,7 +16,7 @@ public class LambdaExpression {
             }
         };
 
-        Thread normal = new Thread(task);
+        Threa   d normal = new Thread(task);
         normal.start();
 
         // Lambda function complete function
