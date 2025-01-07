@@ -2,6 +2,7 @@ package com.springboot.collections.advancelevel.list.linkedlist;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class LinkedListExample {
 
@@ -25,8 +26,16 @@ public class LinkedListExample {
         list.add(2);
         list.add(3);
         list.add(4);
+        list.add(2);
         list.add(5);
         list.add(6);
+
+        System.out.println(" -=====-");
+        System.out.println(list.stream()
+                .filter(element -> list.indexOf(element) != list.lastIndexOf(element))
+                .distinct()
+                .toList());
+
 
         System.out.println(list);
         System.out.println(list.size());
