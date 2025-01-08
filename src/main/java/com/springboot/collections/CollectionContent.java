@@ -248,8 +248,51 @@ public class CollectionContent {
         In modern applications, ArrayList or concurrent alternatives like CopyOnWriteArrayList
         are typically preferred over Vector unless thread  safety is a priority.
 
+    Stack:
+        Since Stack extends Vector, it is synchronized, making it thread-safe.
+
+    LIFO Structure:
+        Stack follows the Last-In-First-Out(LIFO)Principle, where the last element added
+        is the first one to be removed.
+
+    Inheritance:
+        Stack is subclass of Vector, which means it inherits all the features of dynamic
+        array but is constrained by the stack's LIFO nature.
 
 
+    Map:
+        In Java, a Map is an object that maps keys to values. It cannot contain duplicate
+        keys, and each key can map to the at most one value.
+        Think of it as a dictionary where you look up a word (key) to find its definition
+        (value).
+
+    Map does not extend the Collection interface
+
+    ==================Key Characteristics of the Map Interface=====================
+    Key-Value Pair: Each entry in a Map consists of key and value.
+    Unique Keys: No two entries can have the same key.
+    One Value per Key: Each key maps to a single value
+    Order: some implementations maintain insertion order (LinkedHashMap), natural order,
+    (TreeMap), or no order (HashMap).
+
+    ===============Key Characteristics=================
+    Unordered: Does not maintain any order of its elements.
+    Allows null keys and values: can have one null key and multiple null values
+    Not Synchronized: Not thread-safe; require external synchronization if used in a
+                      multi_threaded context.
+    Performance: Offers constant-time performance (O(1)) for basic Operations like get
+                 and put, assuming the hash function disperses elements properly.
+
+
+    ===================Internal Structure of HashMap====================
+    Basic Components of HashMap:
+            Key: The identifier used to retrieve the value.
+            Value: The data associated with the key.
+            Bucket: A place where key-value pairs are stored. Think of buckets as cells
+                    in a list(arrays)
+            Hash Function: Converts a key into an index (bucket location) for storage.
+
+   
 
 
 
