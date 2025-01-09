@@ -399,6 +399,15 @@ public class CollectionContent {
         balanced tree instead of a linked list to ensure better performance O(log n).
 
 
+     LinkedHashMap:
+            LinkedHashMap is slower than HashMap due to linked double list but the same time
+            Complexity. O(log n)
+            follows insertion order
+
+            we can make the cache clear in the format of declaration of accessOrder
+            we can customise the load factor as well initial capacity
+
+
 
     */
 }

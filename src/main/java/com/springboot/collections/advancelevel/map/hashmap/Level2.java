@@ -53,10 +53,16 @@ public class Level2 {
 
             Now, bucket 13 contains two entries: ("banana", 30) and ("grapes", 40).
 
-
-
-
         */
+
+        // get the data if present else take the default value
+        System.out.println(fruits.getOrDefault("apple", 0)); // not works
+        System.out.println(fruits.getOrDefault("defend", 23)); // its works
+
+
+        fruits.putIfAbsent("grapes",45);        // it will not work
+        fruits.putIfAbsent("dragon",45);        // it will work
+        System.out.println(fruits);
 
 
     }
