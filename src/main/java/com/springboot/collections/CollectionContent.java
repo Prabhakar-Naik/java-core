@@ -292,7 +292,111 @@ public class CollectionContent {
                     in a list(arrays)
             Hash Function: Converts a key into an index (bucket location) for storage.
 
-   
+    A has function is an algorithm that takes an input (or "key") and returns a fixed size
+    string of bytes, typically a numerical value. The output is known as a hash code, hash value.
+    The output is known as a hash code, hash value, or simply hash.
+
+    The primary purpose of a hash function is to map data of arbitrary size to data of fixed size.
+
+    =========Key Characteristics===========
+    Deterministic: The same input will always produce the same output.
+
+    Fixed Output Size: Regardless of the input size, the hash code has
+    a consistent size(e.g, 32-bit, 64-bit).
+
+    Efficient Computation: The hash function should compute the hash quickly.
+
+    =================How to Store Data in HashMap==================
+    Step-1: Hashing the key
+        First the key is passed through a hash function to generate a unique hash code
+        (an integer number).
+        This is hash code helps determine where the key-value pair will be stored in the
+        array (called a "bucket array").
+
+    Step-2: Calculating the Index
+        The hash code is then used to calculate an index in the array (bucket location) using
+        int index = hashcode % arraySize
+
+        The index decides which bucket will hold this key-value pair.
+
+        For Example: If the array size is 16, the key's hashcode will be divided by 16,
+        and the remainder will be the index.
+
+    Step-3: Storing in the Bucket
+        The key-value pair is stored in the bucket at the calculated index. Each bucket can
+        hold multiple key-value pairs.
+        (this is called a collision handling mechanism, discussed later).
+
+    Example:
+        map.put("apple", 50);
+        --> "apple" is the key
+        --> 50 is the value
+        The hashcode of "apple" is calculated.
+        The index is found using the hash code.
+        The pair ("apple", 50) is stored in the corresponding bucket.
+
+    How Hashmap Retrieves the data
+        When we call get(key), the HashMap follows these steps
+        Hashing the key:
+            Similar to insertion, the key is hashed using the same hash function to calculate
+            its hashcode.
+        Finding the index:
+            The hash code is used to find the index of the bucket where the key-value pair is stored.
+        searching in the bucket:
+            Once the correct bucket is found, it checks the key in that bucket. if it finds the key,
+            it returns the associated value.
+
+     Handling Collision:
+        Since different keys can generate the same index (called a collision), HashMap uses a
+        technique to handle this situation. Java's HashMap use s Linked Lists (or balanced trees
+        after Java 8) for this.
+
+        If multiple key-value pairs map to the same bucket, they are stored in a linked list
+        inside the bucket.
+
+        When a key-value pair is retrieved, the HashMap traverses the linked list, checking each
+        key until it finds a match.
+
+        Example:
+
+        fruits.put("apple",1);
+        fruits.put("orange",2);
+        fruits.put("banana",3);
+        fruits.put("pear",4);
+
+        let say "apple" and "orange" end up in the same bucket due to hash collision.
+        They will be stored in a linked list in the bucket:
+
+        Bucket 5: ("apple", 1) -> ("orange", 2)
+
+        when we do map.get("orange"), HashMap will go to bucket 5 and then traverse the
+        linked list to find the entry with the key "orange".
+
+     HashMap Resizing (Rehashing):
+        HashMap has an internal array size, which by default is 16.
+        When the number of elements (key-value pairs) grows and exceeds a certain load factor
+        (default is 0.75), HashMap automatically resizing the array to hold more data.
+        This process is called rehashing.
+
+        The default size of the array is 16, so when more than 12 elements (16 * 0.25) are
+        inserted, the HashMap will resize.
+
+     During Rehashing:
+        The array size is doubled.
+
+        All existing entries are rehashed (i.e., their positions are recalculated) and placed
+        into the new array.
+        This ensures the HashMap continues to perform efficiently even as more data added.
+
+     Time Complexity:
+        HashMap provides constant time O(1) performance for basic operations like put() and get()
+        (assuming no collisions).
+
+        However,if there are many collisions, and many entries are stored in the same bucket,
+        the performance can degrade to O(n), where n is the number of elements in that bucket.
+
+        But after java 8, if there are too many elements in a bucket, HashMap switches to a
+        balanced tree instead of a linked list to ensure better performance O(log n).
 
 
 
