@@ -8,7 +8,7 @@ public class Level1 {
 
     public static void main(String[] args) {
 
-        List<Plant> plants = new ArrayList<Plant>();
+        List<Plant> plants = new ArrayList<>();
         plants.add(new Plant("Alice",20,460));
         plants.add(new Plant("Bob",10,70));
         plants.add(new Plant("Charlie",27,60));
@@ -22,6 +22,12 @@ public class Level1 {
         System.out.println("Base on Price: ");
         plants.sort((a,b) -> (int) (a.getPrice() - b.getPrice()));
 
+        for (Plant plant : plants) {
+            System.out.println(plant);
+        }
+
+        System.out.println("Sort by price In Double.compare(): ");
+        plants.sort((a,b) -> Double.compare(b.getPrice(), a.getPrice()));
         for (Plant plant : plants) {
             System.out.println(plant);
         }
