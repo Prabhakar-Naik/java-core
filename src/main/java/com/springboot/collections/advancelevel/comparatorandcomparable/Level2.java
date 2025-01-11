@@ -1,4 +1,4 @@
-package com.springboot.collections.advancelevel.comparator;
+package com.springboot.collections.advancelevel.comparatorandcomparable;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,7 +9,7 @@ public class Level2 {
 
     public static void main(String[] args) {
 
-        List<Student> students = new ArrayList<Student>();
+        List<Student> students = new ArrayList<>();
         students.add(new Student("Prabhakar", 9.3));
         students.add(new Student("Kavitha", 3));
         students.add(new Student("charan", 7.3));

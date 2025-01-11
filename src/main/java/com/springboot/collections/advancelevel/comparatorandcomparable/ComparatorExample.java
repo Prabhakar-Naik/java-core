@@ -1,4 +1,4 @@
-package com.springboot.collections.advancelevel.comparator;
+package com.springboot.collections.advancelevel.comparatorandcomparable;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -407,6 +407,34 @@ public class CollectionContent {
             we can make the cache clear in the format of declaration of accessOrder
             we can customise the load factor as well initial capacity
 
+        following the concepts covered
+        1. Garbage Collection
+        2. Identity HashMap
+        3. WeakReference
+        4. WeakHashMap
+        5. Comparable
+        6. LRC Cache
+
+     SortedMap:
+            SortedMap is an interface that extends Map and guarantees that the entries are sorted
+            based on the keys, either in their natural ordering or by a specified comparator.
+
+
+      NavigableMap:
+            NavigableMap extends SortedMap, providing more powerful navigation options such as
+            finding the closest matching key or retrieving the map in reverse order.
+
+      HashTable is synchronized
+      no null key or value
+      Legacy Class, ConcurrentHashMap
+      slower than HashMap
+      only linked list in case of collision
+      all methods are synchronized
+
+
+
+
+
 
 
     */
