@@ -10,6 +10,7 @@ public class QueueDemo {
         System.out.println("Queue Reference Task: ");
         Queue<Integer> queue = new LinkedList<>();
         // Add elements in 2 ways of methods: enqueue
+
         queue.add(1);
         queue.offer(39);
         queue.add(2);
