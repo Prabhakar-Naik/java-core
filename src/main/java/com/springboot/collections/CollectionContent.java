@@ -431,6 +431,12 @@ public class CollectionContent {
       only linked list in case of collision
       all methods are synchronized
 
+      Queue:
+        It is a data structure that works on the FIFO (First In First Out) principle.
+
+        Elements are added at the end and removed from the front.
+
+
 
 
 

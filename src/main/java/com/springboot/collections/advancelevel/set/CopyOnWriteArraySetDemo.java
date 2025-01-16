@@ -16,6 +16,7 @@ public class CopyOnWriteArraySetDemo {
 
 //        Set<String> shoppingSet = new HashSet<>();     // ConcurrentModificationException
 
+        // According to use case you can apply on your requirements.
         CopyOnWriteArraySet<String> shoppingSet = new CopyOnWriteArraySet<>();
         ConcurrentSkipListSet<String> concurrentSkipListSet = new ConcurrentSkipListSet<>();
 
