@@ -7,6 +7,7 @@ import java.util.LinkedList;
 public class ArrayDequeDemo {
 
     // pronunciation is deq (double ended queue)
+    // no thread safe
 
     public static void main(String[] args) {
 
@@ -63,7 +64,12 @@ public class ArrayDequeDemo {
 
         // faster than stack
 
-        Deque<Integer> deque1 = new ArrayDeque<>();     //
+        /*
+        ArrayDeque class is likely to be faster than Stack when used as a stack,
+        and faster than LinkedList when used as a queue.
+        */
+
+        Deque<Integer> deque1 = new ArrayDeque<>();
 
         // circular array, head and tail
         deque1.add(23);

@@ -5,9 +5,19 @@ import java.util.LinkedList;
 
 public class LinkedListDequeDemo {
 
+    // not thread safe
+
     public static void main(String[] args) {
 
         // same functionality in ArrayDeque but accuracy and performance differ
+
+        // high memory, pointers, or more nodes
+        // quick modify because of LinkedList follows Node base insertions or modifications.
+
+        /*
+        LinkedList class is likely to be faster than Arrays in the point data modifications,
+        and faster than ArrayDeque when used as a queue, Deque and List.
+        */
 
         Deque<Integer> deque2 = new LinkedList<>();
 
