@@ -90,17 +90,27 @@ public class Operators {
         z = x & y; // 0001 (1 in decimal)
         System.out.println(z);
 
+        System.out.println("AND Operator:");
+        System.out.println("5 & 3 = "+ (x & y));
+        System.out.println("Binary: "+ Integer.toBinaryString(x & y));
+
         // Bitwise OR (|)
         // Performs a bit-by-bit OR operation.
         // The result bit is 1 if at least one of the corresponding bits is 1.
         z = x | y;  // 0111 (7 in decimal)
         System.out.println(z);
+        System.out.println("OR Operator:");
+        System.out.println("5 | 3 = "+ (x | y));
+        System.out.println("Binary: "+ Integer.toBinaryString(x | y));
 
         // Bitwise XOR (^)
         // Performs a bit-by-bit exclusive OR (XOR) operation.
         // The result bit is 1 if the corresponding bits are different
         z = x ^ y;  // 0110 (6 in decimal)
         System.out.println(z);
+        System.out.println("XOR Operator:");
+        System.out.println("5 | 3 = "+ (x | y));
+        System.out.println("Binary: "+ Integer.toBinaryString(x | y));
 
         // Bitwise NOT (~)
         // Performs a bit-by-bit NOT (complement) operation.
@@ -109,6 +119,9 @@ public class Operators {
         int g = 5;  // 0101 in binary
         int h = ~g; // 11111111111111111111111111111010 (in 32-bit int, -6 in decimal)
         System.out.println(h);
+        System.out.println("NOT ~ Operator:");
+        System.out.println("~5 "+ (~g));
+        System.out.println("Binary: "+ Integer.toBinaryString(~g));
 
         // Left Shift (<<)
         // Shifts the bits to the left by a specified number of positions.
@@ -116,6 +129,9 @@ public class Operators {
         int val = 5;  // 0101 in binary
         int res = val << 2; // 10100 (20 in decimal)
         System.out.println(res);
+        System.out.println("Left Shift Operator:");
+        System.out.println("5 << 1 = "+ (val << 2));
+        System.out.println("Binary: "+ Integer.toBinaryString(val << 2));
 
         // Right Shift (>>)
         // Shifts the bits to the right by a specified number of positions.
@@ -131,6 +147,10 @@ public class Operators {
         res = val >> 2; // 111...11101 ( -5 in decimal)
         System.out.println(res);
 
+        System.out.println("Right Shift Operator:");
+        System.out.println("20 >> 2 = "+ (val >> 2));
+        System.out.println("Binary: "+ Integer.toBinaryString(val >> 2));
+
         // Unsigned Right Shift (>>>)
         // Shifts the bits to the right by a specified number of positions.
         // Always fills the leftmost bits with 0s, regardless of the sign.
@@ -139,6 +159,9 @@ public class Operators {
         res = val >>> 2; // 001...11101 (a very large positive number)
 
         System.out.println(res);
+        System.out.println("Unsigned Right Shift Operator:");
+        System.out.println("-20 >>> 2 = "+ (val >>> 2));
+        System.out.println("Binary: "+ Integer.toBinaryString(val >>> 2));
 
         /*
         Use Cases:
@@ -151,6 +174,7 @@ public class Operators {
         Working with Color Values: Manipulating individual color components (red, green, blue).
 
         */
+
     }
 
 }
