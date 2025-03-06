@@ -1,5 +1,7 @@
 package com.springboot.context;
 
+import java.util.stream.IntStream;
+
 /**
  * @author prabhakar, @Date 06-03-2025
  */
@@ -96,5 +98,115 @@ public class ConditionalStatements {
         System.out.println((isSunny && !isWarm) || (!isSunny || isWarm));   //true
 
 
+        // Conditional StatementsConditional statements in Java allow the program to make
+        //decisions based on conditions and execute specific blocks of code depending on the outcome.
+
+        //1. if Statement
+        //2. if-else Statement
+        //3. if-else if Ladder
+        //4. switch Statement (works with int, char, String, and enum types)
+        //5. Ternary Operator (variable = (condition) ? value_if_true: value_if_false;)
+
+        // if
+        if (isSunny && isWarm) {
+            System.out.println("Sunny");
+        }
+
+        // if-else
+        if (isSunny || isWarm) {
+            System.out.println("Sunny");
+        }else {
+            System.out.println("Warm");
+        }
+
+        // if-else-if
+        if (isSunny  && !isWarm) {
+            System.out.println("Sunny");
+        }else if (isSunny || isWarm) {
+            System.out.println("Warm");
+        }else {
+            System.out.println("Not Sunny");
+        }
+
+        // Switch
+        String day = "MONDAY";
+        switch (day){
+            case "MONDAY":
+                System.out.println("MONDAY");
+                break;
+                case "TUESDAY":
+                    System.out.println("TUESDAY");
+                    break;
+                    case "WEDNESDAY":
+                        System.out.println("WEDNESDAY");
+                        break;
+                        case "THURSDAY":
+                            System.out.println("THURSDAY");
+                            break;
+                            case "FRIDAY":
+                                System.out.println("FRIDAY");
+                                break;
+                                case "SATURDAY":
+                                    System.out.println("SATURDAY");
+                                    break;
+                                    case "SUNDAY":
+                                        System.out.println("SUNDAY");
+                                        break;
+                                        default:
+                                            System.out.println("Invalid Input");
+                                            break;
+        }
+
+        // Ternary
+        String variable = (isSunny && isWarm) ? "Sunny" : "Warm";
+
+        System.out.println(isSunny || isWarm ? "Sunny" : "Warm");
+
+        System.out.println(variable);
+
+        /*
+            Statement                     Use Case
+                if               When a single condition needs to be evaluated.
+              if-else            When there are two conditions: one for true and one for false.
+              if-else if         When there are multiple conditions to evaluate in sequence.
+               switch            When you have multiple discrete values for a single variable to compare.
+              Ternary            When you need a compact way to represent simple if-else logic.
+
+        */
+
+        // Loops
+        // 1. for Loop
+        // 2. Enhanced for Loop (for-each Loop)
+        // 3. while Loop
+        // 4. do-while Loop
+
+        System.out.println("For loop:");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+
+        System.out.println("While loop:");
+        int i = 1;
+        while (i <= 10) {
+            System.out.println(i);
+            i++;
+        }
+
+        System.out.println("Do while:");
+        i = 1;
+        do {
+            System.out.println(i);
+            i++;
+        }while (i <= 10);
+
+        System.out.println("For Each loop: ");
+
+        int[] arr = {1,2,3,4,5};
+        for (int val : arr) {
+            System.out.println(val);
+        }
+
+        System.out.println("InStream Range loop: ");
+        IntStream.range(1, 11).forEach(System.out::println);
     }
 }
