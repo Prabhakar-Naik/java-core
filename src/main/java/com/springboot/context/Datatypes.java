@@ -181,6 +181,7 @@ public class Datatypes {
         System.out.println(name);
         System.out.println(result);
 
+
         System.out.println(stack == stack);     // checking reference and value
         System.out.println(string == string);   // checking reference and value
         System.out.println(string == string3);  // checking reference and value
@@ -193,7 +194,7 @@ public class Datatypes {
         System.out.println(name);   // still prints Prabha
 
         name = name.toUpperCase();
-        System.out.println(name);   // Create new String
+        System.out.println(name);   // Create new String PRABHA
 
        // Common String Operations
         String text = "Hello World";
