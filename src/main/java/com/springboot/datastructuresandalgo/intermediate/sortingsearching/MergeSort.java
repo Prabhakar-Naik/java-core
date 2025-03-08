@@ -21,7 +21,7 @@ public class MergeSort {
             Maintains the order of duplicate elements (important in sorting objects).
     */
 
-    // Merge function to combine two sorted subarrays
+    // Merge function to combine two sorted sub arrays
     public static void merge(int[] arr, int left, int mid, int right) {
         int n1 = mid - left + 1;
         int n2 = right - mid;

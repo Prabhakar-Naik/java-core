@@ -18,9 +18,11 @@ public class OOPS {
         5. Polymorphism
         6. Inheritance
 
+
+
         Class:
-            A class is a blueprint for creating objects. It defines that structure (fields)
-            and behaviour (methods) of objects.
+            A class is a blueprint for creating objects.
+            It defines that structure (fields) and behaviour (methods) of objects.
           Ex:
           class Car{
               String color;
@@ -31,6 +33,8 @@ public class OOPS {
               }
           }
 
+
+
         Object:
             An object is an instance of a class. It represents a real-world entity and
             it has attributes and behaviors.
@@ -39,15 +43,19 @@ public class OOPS {
           car.color = "Red";
           car.drive();
 
+
+
         Abstraction:
             Abstraction focuses on showing only essential details while hiding the implementation.
             It is achieved through abstract classes and interfaces.
+
         Abstract Class:
             Declared using the abstract keyword.
             Can include both abstract methods (methods without a body) and
             concrete methods (methods with a body).
             Cannot be instantiated directly.
             Acts as a blueprint for subclasses, which must implement the abstract methods.
+
          Ex:
           public class Test {
             public static void main(String[] args) {
@@ -67,21 +75,23 @@ public class OOPS {
             }
            }
            class Dog extends Animal{
-            public void sayHello() }
+            public void sayHello() {
             System.out.println("Woof");
+            }
             public void sayBye() {
             System.out.println("Woof Woof");
             }
            }
            class Cat extends Animal{
             public void sayHello() {
-            }
             System.out.println("Meow");
-           }
+            }
             public void sayBye() {
             System.out.println("Meow Meow");
             }
           }
+
+
         Encapsulation:
             Encapsulation is the practice of bundling data(fields) and methods (functions) that
             operate on the data into a single unit (class). It also involves restricting direct
@@ -98,6 +108,8 @@ public class OOPS {
                 this.name = name;
               }
             }
+
+
         Inheritance:
             Inheritance allows a class to acquire properties and methods of another class.
             It supports code reusability.
@@ -112,6 +124,7 @@ public class OOPS {
                 System.out.println("Dog barks.");
              }
             }
+
          Inheritance:
             Single
             Multilevel
@@ -119,15 +132,17 @@ public class OOPS {
             Java Doesn't support Multiple inheritance
 
          Polymorphism:
-            Polymorphism allows methods to perform different tasks based on the object that calls them.
+            Polymorphism allows methods to perform different tasks
+            based on the object that calls them.
             It can be achieved via:
                 Runtime Polymorphism (Method Overriding)
                 Compile-time Polymorphism (Method Overloading)
 
             Method overloading: (Compile-Time Polymorphism)
-                Method Overloading in Java is a feature that allows a class to have multiple methods
-                with the same name but different parameter lists. It enables a method to perform
-                different tasks depending on the arguments passed to it.
+                Method Overloading in Java is a feature that allows a class
+                to have multiple methods with the same name but different
+                parameter lists. It enables a method to perform different
+                tasks depending on the arguments passed to it.
             Ex:
             Different Number of Parameters
 
@@ -208,6 +223,92 @@ public class OOPS {
                    animal2.sound(); // Calls Cat's overridden method: "Cat meows"
                   }
                  }
+
+    */
+
+        //
+    /*
+        Access Modifier Scope within
+
+Access Modifier     Scope within the Class      Scope within the Package    Scope in Subclasses     Scope Everywhere
+                                                                            (Different Package)
+
+public                      Yes                         Yes                         Yes                     Yes
+protected                   Yes                         Yes                         Yes                      No
+default (no keyword)        Yes                         Yes                         No                       No
+private                     Yes                          No                         No                       No
+
+        Interface:
+            Class --> Blueprint for object
+            Interface --> Blueprint for class
+        By Interface, we achieve abstraction and multiple inheritance.
+        It can have abstract methods, static constants,static methods and default methods.
+
+        Static Methods in Interface:
+            Used for utility operations that are RELATED to the interface but don't need
+            instance state
+            Cannot be overridden by implementing classes
+            Called directly on the interface (not through instance)
+
+       interface PaymentValidator {
+            boolean validatePayment(Payment payment);
+            // Static utility method - helper functions related to validation
+            static boolean isValidCreditCard(String cardNumber){
+            // Luhn algorithm check
+            return cardNumber.length() == 16;
+            }
+            static boolean isValidAmount(double amount) {
+            return amount > 0 && amount < 1000000;
+            }
+        }
+
+        class PayPalValidator implements PaymentValidator {
+            @Override
+            public boolean validatePayment(Payment payment){
+            // First use static utility method
+            if (!PaymentValidator.isValidAmount(payment.getAmount())) {
+            return false;
+            }
+            // Then do PayPal specific validation
+            return true;
+            }
+        }
+
+        Default Methods in Interface
+
+        Provide optional functionality to implementing classes
+        Can be overridden if needed
+        Can use other interface methods (abstract or
+        default)
+        Called through instance
+
+        interface PaymentProcessor {
+            void processPayment(Payment payment);
+            // Default method using abstract method
+            default void processPayments(List<Payment> payments) {
+                for(Payment payment: payments) {
+                processPayment(payment);
+                }
+            }
+            // Default method with common implementation
+            default void validateAndProcess(Payment payment) {
+                if(payment.getAmount() <= 0) {
+                throw new IllegalArgumentException("Invalid
+                }
+              processPayment(payment);
+             }
+          }
+
+          class StripeProcessor implements PaymentProcessor {
+              @0verride
+              public void processPayment(Payment payment) {
+              // Stripe specific implementation
+              }
+              // Can use default processPayments() as is amount");
+              // Can override validateAndProcess() if needed
+           }
+
+
 
 
     */
