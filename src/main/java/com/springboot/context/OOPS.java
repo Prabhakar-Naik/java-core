@@ -308,8 +308,13 @@ private                     Yes                          No                     
               // Can override validateAndProcess() if needed
            }
 
-
-
+           Interface VS Abstract Class
+           Interface:
+            achieve multiple inheritance
+            we can  not create instance
+           Abstract class:
+            we can create instance and constructor for the class
+            not validate in multiple inheritance
 
     */
 
