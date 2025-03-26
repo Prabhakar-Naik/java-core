@@ -7,7 +7,6 @@ public class Fibonacci {
 		int next,first=0,second=1;
 		for(int i=0;i<10;i++)
 		{
-			
 			if(i<=1)
 				next=i;
 			else

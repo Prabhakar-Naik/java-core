@@ -15,6 +15,24 @@ public class FibonacciSeriesRecursion {
 	public static void main(String[] args) {
 		System.out.print(a+" "+b);
 		printFibonacci(10-2);
-		//printFibonacci(8);
+	 	//printFibonacci(8);
+		System.out.println();
+		System.out.println(fibonacci(11)-1);
 	}
+
+
+	private static int fibonacci(int n){
+		 if(n==0){
+			 return 0;
+		 }
+		 if(n==1) {
+			 return 1;
+		 }
+		 if(n>0){
+			 return fibonacci(n-1) + fibonacci(n-2);
+		 }
+		 return n;
+	}
+
+
 }
