@@ -45,4 +45,17 @@ public class BinarySearch {
         if (first > last)
             System.out.println(search + " is not present in the list.\n");
     }
+
+
+    public int binarySearch(int[] a, int key){
+        int lo = 0, hi = a.length - 1;
+        while(lo <= hi){
+            int mid = lo + (hi - lo)/2;
+            if(a[mid] == key) return mid;
+            else if(a[mid] < key) lo = mid + 1;
+            else hi = mid - 1;
+        }
+        return -1;  // not found
+    }
+
 }

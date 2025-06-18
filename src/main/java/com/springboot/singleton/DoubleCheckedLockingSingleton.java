@@ -1,6 +1,7 @@
 package com.springboot.singleton;
 
 public class DoubleCheckedLockingSingleton {
+
     private static volatile DoubleCheckedLockingSingleton instance;
 
     private DoubleCheckedLockingSingleton() {

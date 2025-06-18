@@ -8,6 +8,7 @@ import java.util.Optional;
  */
 // 1. AP System (Availability and Partition Tolerance) - Eventual Consistency
 class APNode implements KeyValueStore {
+
     private Map<String, String> data = new HashMap<>();
     private String nodeId;
 
