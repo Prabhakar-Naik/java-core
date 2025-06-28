@@ -12,7 +12,7 @@ public class Test {
         try {
             account.withdraw(60);
         }catch (InsufficientFundsException e){
-            System.out.println(e);
+            System.out.println(e.getMessage());
         }
 
     }

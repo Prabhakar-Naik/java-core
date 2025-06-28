@@ -49,6 +49,8 @@ public class ExceptionHandling {
             StackTraceElement[] stackTrace = e.getStackTrace();
             for (int j = 0; j < stackTrace.length; j++) {
                 System.out.println(stackTrace[j]);
+                System.out.println(stackTrace[j].getFileName().split("\\.")[0]+" : "+e.getMessage()+" line number: "+stackTrace[j].getLineNumber());
+                throw new ArrayIndexOutOfBoundsException();
             }
         }
         System.out.println("Good Job :)");

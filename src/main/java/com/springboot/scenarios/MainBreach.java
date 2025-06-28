@@ -2,7 +2,9 @@ package com.springboot.scenarios;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 
 /**
@@ -38,6 +40,22 @@ public class MainBreach {
 
         List<Person> suggest = iam.suggestFriends(suggestFriends);
         System.out.println(suggest);
+
+
+        List<Integer> list =  List.of(23,56,35,67,78,26);
+
+        Optional<Integer> first = list.stream().distinct().sorted(Comparator.reverseOrder())
+                .skip(1)
+                .findFirst();
+
+        first.ifPresent(System.out::println);
+
+        if (first.isPresent()) {
+            System.out.println(first.get());
+        }else
+            System.out.println("No such person");
+
+        first.ifPresentOrElse(System.out::println, () -> System.out.println("No such person"));
 
     }
 }

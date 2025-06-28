@@ -5,8 +5,8 @@ package com.springboot.exceptions.scenario2;
  */
 public class InsufficientFundsException extends Exception{
 
-    public InsufficientFundsException(){
-        super("You Don't have enough money.");
+    public InsufficientFundsException(String message) {
+        super(message);
     }
 
     @Override
