@@ -12,6 +12,7 @@ import java.net.http.HttpResponse;
 public class HttpClientExample {
 
     public static void main(String[] args) throws Exception {
+        
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest req = HttpRequest.newBuilder()
                 .uri(URI.create("https://httpbin.org/get"))
