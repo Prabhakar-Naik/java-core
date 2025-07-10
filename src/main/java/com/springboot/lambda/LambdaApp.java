@@ -1,7 +1,7 @@
 package com.springboot.lambda;
 
 @FunctionalInterface
- interface  Cab {
+interface  Cab {
 	void bookUber();
 }
 
