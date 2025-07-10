@@ -2,12 +2,16 @@ package com.springboot.core.basic;
 
 import java.util.Arrays;
 
+import static com.springboot.lld.datastructures.string.Anagram.isAnagram;
+
 public class AnagramStrings {
 
 	public static void main(String[] args) {
 		
 		String str1="Keep";
-		String str2="pEEk";
+		String str2="pEEK";
+
+		System.out.println("isAnagram method: "+isAnagram(str1,str2));
 		
 		str1=str1.toLowerCase();
 		str2=str2.toLowerCase();
@@ -28,5 +32,7 @@ public class AnagramStrings {
 			else
 				System.out.println("Not an Anagram***");
 		}
+
+
 	}
 }
