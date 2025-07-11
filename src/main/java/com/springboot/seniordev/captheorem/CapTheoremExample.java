@@ -14,7 +14,7 @@ public class CapTheoremExample {
         // Simulate partition
         System.out.println("\n--- AP System Partition ---");
         apNode1.put("key1", "value2"); // Write during partition
-        System.out.println("AP Node 2 Get during partition: " + apNode2.get("key1")); // Read during partition (old value)
+        System.out.println("AP Node 1 Get during partition: " + apNode1.get("key1")); // Read during partition (old value)
 
         System.out.println("\n--- AP System Recovery ---");
         System.out.println("AP Node 2 Get after recovery: " + apNode2.get("key1")); // Read after recovery (eventually consistent)
