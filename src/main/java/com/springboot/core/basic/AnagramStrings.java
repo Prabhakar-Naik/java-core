@@ -2,7 +2,7 @@ package com.springboot.core.basic;
 
 import java.util.Arrays;
 
-import static com.springboot.lld.realworldusages.string.Anagram.isAnagram;
+import static com.springboot.lld.sample.string.Anagram.isAnagram;
 
 public class AnagramStrings {
 
