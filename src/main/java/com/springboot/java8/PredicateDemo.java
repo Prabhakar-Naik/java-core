@@ -2,6 +2,7 @@ package com.springboot.java8;
 
 import java.util.function.Predicate;
 
+// filter functional interface
 public class PredicateDemo {
 
     // Predicate is a conditional functional implementation
@@ -15,6 +16,7 @@ public class PredicateDemo {
 
         Predicate<Integer> isEven = x -> x % 2 == 0;
         Predicate<Integer> isOdd = x -> x % 2 == 1;
+
         System.out.println("12 isEven: " + isEven.test(12));
         System.out.println("12 isOdd: " + isOdd.test(12));
 
