@@ -1,5 +1,7 @@
 package com.springboot.keywords;
 
+import java.util.Scanner;
+
 /**
  * @author prabhakar, @Date 24-12-2024
  */
@@ -13,5 +15,5 @@ public class PackageAndImport {
 
     // ==> import java.util.Scanner;
 
-
+    // Scanner scanner = new Scanner(System.in);
 }

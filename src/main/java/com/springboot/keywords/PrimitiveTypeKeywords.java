@@ -24,7 +24,7 @@ public class PrimitiveTypeKeywords {
 
     // above keywords all are primitive type data types
     // these are not objects, because of these primitive type
-    // java is not 100% object-oriented programing language
+    // java is not 100% object-oriented programing language because of primitive type data types
 
 
 

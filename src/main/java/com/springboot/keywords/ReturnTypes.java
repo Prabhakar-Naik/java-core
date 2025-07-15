@@ -87,5 +87,13 @@ public class ReturnTypes {
     }
 
 
+    ReturnTypes returnType(){
+        return new ReturnTypes();
+    }
+
+    // we can return the type of generic type.
+    public <T extends Number> Number add(T type){
+        return type;
+    }
 
 }

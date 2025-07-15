@@ -13,10 +13,13 @@ public class AccessControlKeywords {
     // here we have 3 Access Control Keywords from java standards
     // public is a common access modifier in java,
     //          we can access the data from anywhere in the project.
-    // private is a some restricted access modifier in java,
+    // private is a most restricted access modifier in java,
     //          we can access the data in the class level only.
-    // protected is a most restricted access modifier in java,
+    // protected is a some restricted access modifier in java,
     //          we can access the data using their child class object only
+    // default (Package-Private) (no keyword specified):
+    //          we can access only within the same package.
+    //          Not accessible from classes in other packages.
 
 
 }
