@@ -1,8 +1,7 @@
-package com.springboot.scenarios;
+package com.springboot.scenarios.linkedinFriendSuggest;
 
 import java.time.LocalDate;
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * @author prabhakar, @Date 18-06-2025

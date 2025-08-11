@@ -30,7 +30,7 @@ public class SieveOfEratosthenes {
     }
 
     /**
-     * Tests for {@link SieveOfEratosthenes (int)}.
+     * Tests for {@link SieveOfEratosthenes(int)}.
      */
 
 //    @Test
