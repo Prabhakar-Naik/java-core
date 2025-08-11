@@ -6,7 +6,7 @@ This repository serves as a comprehensive resource for Java learners, developers
 ---
 
 ## 📚 **Table of Contents**
-* [Overview](#introduction)
+* [Introduction](#introduction)
 1. [Introduction](#introduction)
 2. [Features](#features)
 3. [Java Topics Covered](#java-topics-covered)
@@ -17,7 +17,7 @@ This repository serves as a comprehensive resource for Java learners, developers
 
 ---
 
-### 📝 Introduction
+## 📝 Introduction
 
 Java is one of the most widely-used programming languages in the world, known for its platform independence and robust design. This repository is designed to help individuals:
 - Learn Java from the ground up.
