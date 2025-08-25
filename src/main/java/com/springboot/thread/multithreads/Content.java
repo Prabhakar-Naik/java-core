@@ -101,7 +101,6 @@ public class Content {
             To create new thread in java, you can either extend the Thread class or
             implement the Runnable interface.
 
-
     */
 
     // Thread Pool:
