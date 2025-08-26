@@ -10,11 +10,19 @@ public class AbstractionDemo {
 		
 		System.out.println("Abstraction contains abstract class and interfaces");
 		
-		System.out.println("Abstract class : A class contain the abstract keyword in its declaration is calles abstract class");
+		System.out.println("Abstract class : A class contain the abstract keyword in its declaration is call as abstract class");
 		
 		System.out.println("Abstract method : A method without body is called as abstract method");
 		
-		System.out.println("Note: we can't create abstract  object for abstract class.\n\n");
+		System.out.println("Note: we can't create abstract object for abstract class.\n\n");
+		// we can implement the functionality
+		Animal animal = new Animal() {
+			@Override
+			public void sound() {
+				System.out.println("I'm an animal");
+			}
+		};
+		animal.sound();
 		
 		System.out.println("It is abstract class methods...");
 		

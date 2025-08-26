@@ -23,7 +23,7 @@ class Child extends Parent {
     }
 
     public static void display1(String name){
-        System.out.println("static void display1 Child");
+        System.out.println("static void display1 Child "+name);
     }
 
 }
