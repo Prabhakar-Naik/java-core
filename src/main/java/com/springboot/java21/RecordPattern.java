@@ -12,8 +12,16 @@ public class RecordPattern {
         }
     }
 
+    public static int afterRecordPattern(Object obj) {
+        if (obj instanceof Point(int x, int y)) {
+            return x + y;
+        }
+        return 0;
+    }
+
     public static void main(String[] args) {
         inspect(new Point(10,20));
-
+        var sum = afterRecordPattern(new Point(10,20));
+        System.out.println(sum);
     }
 }

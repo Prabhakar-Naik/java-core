@@ -22,25 +22,25 @@ public class SendMessage {
     // The AWS Region that you want to use to send the voice message. For a list of
     // AWS Regions where the Amazon Pinpoint SMS and Voice API is available, see
     // https://docs.aws.amazon.com/pinpoint-sms-voice/latest/APIReference/
-    static final String region = "us-east-1";
+    static final String region = "ap-south-1";
 
     // The phone number that the message is sent from. The phone number that you
     // specify has to be associated with your Amazon Pinpoint account. For best
     // results, you should specify the phone number in E.164 format.
-    static final String originationNumber = "+12065550110";
+    static final String originationNumber = "+917095262400";
 
     // The recipient's phone number. For best results, you should specify the
     // phone number in E.164 format.
-    static final String destinationNumber = "+12065550142";
+    static final String destinationNumber = "+917095262401";
 
     // The Amazon Polly voice that you want to use to send the message. For a list
     // of voices, see https://docs.aws.amazon.com/polly/latest/dg/voicelist.html
-    static final String voiceName = "Matthew";
+    static final String voiceName = "Prabhakar";
 
     // The language to use when sending the message. For a list of supported
     // languages, see
     // https://docs.aws.amazon.com/polly/latest/dg/SupportedLanguage.html
-    static final String languageCode = "en-US";
+    static final String languageCode = "en-IN";
 
     // The content of the message. This example uses SSML to customize and control
     // certain aspects of the message, such as by adding pauses and changing
@@ -55,7 +55,7 @@ public class SendMessage {
     // The phone number that you want to appear on the recipient's device. The
     // phone number that you specify has to be associated with your Amazon Pinpoint
     // account.
-    static final String callerId = "+12065550199";
+    static final String callerId = "+917095262432";
 
     // The configuration set that you want to use to send the message.
     static final String configurationSet = "ConfigSet";
