@@ -11,7 +11,7 @@ public class TestVehicle {
         String name = vehicle.name = "Altroz";
 
         Vehicle vehicle1 = new Vehicle(name,speed);
-        System.out.printf("%s and %d: ",name, speed);
+        System.out.printf("%s and %d: ",vehicle1.name, vehicle1.speed);
 
 
     }
