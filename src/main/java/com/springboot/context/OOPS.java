@@ -59,11 +59,11 @@ public class OOPS {
          Ex:
           public class Test {
             public static void main(String[] args) {
-            Animal bob = new Dog(); Animal bobyy = new Cat();
+            Animal bob = new Dog(); Animal boby = new Cat();
             bob.sayBye();
-            bobyy.sayBye();
-            bob.sleeер();
-            bobyy.sleep();
+            boby.sayBye();
+            bob.sleер();
+            boby.sleep();
            }
           }
 
@@ -235,8 +235,8 @@ Access Modifier     Scope within the Class      Scope within the Package    Scop
 
 public                      Yes                         Yes                         Yes                     Yes
 protected                   Yes                         Yes                         Yes                      No
-default (no keyword)        Yes                         Yes                         No                       No
-private                     Yes                          No                         No                       No
+default (no keyword)        Yes                         Yes                          No                       No
+private                     Yes                          No                          No                       No
 
         Interface:
             Class --> Blueprint for object
